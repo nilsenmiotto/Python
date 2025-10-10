@@ -3,8 +3,8 @@
 ## 1. Conhecimentos Técnicos Essenciais
 
 - **Domínio da linguagem Python**
-  - Tipos de dados, estruturas de controle, funções, classes, decorators, generators
-  - Manipulação de arquivos, exceções, módulos e pacotes
+  - Tipos de dados, estruturas de controle, funções, classes, decorators, generators e lambdas
+  - Manipulação de arquivos, funções internas, metodos por tipos de variáveis, exceções, socket, módulos e pacotes
   - Programação funcional e orientada a objetos
 
 ## 2. Frameworks e Bibliotecas Populares
@@ -41,7 +41,7 @@
 - AWS, Azure ou GCP
 - Deploy de aplicações, serverless, storage, autenticação
 
-## 8. LLMs
+## 8. Inteligência Artificial e Processamento de Linguagem Natural (NLP)
 
 - Hugging Face Transformers
 - LangChain
