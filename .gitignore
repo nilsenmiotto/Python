@@ -1,0 +1,173 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Distribution / packaging
+build/
+dist/
+*.egg-info/
+.eggs/
+pip-wheel-metadata/
+*.egg
+
+# Virtual environments
+.env
+.env.*
+.venv/
+venv/
+ENV/
+env/
+env.bak/
+venv.bak/
+
+# PyInstaller
+*.manifest
+*.spec
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+.pytest_cache/
+
+# Translations
+*.mo
+*.pot
+
+# IDEs and editors
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+*.swp
+
+# Language server / type checkers / tooling
+.mypy_cache/
+.pytype/
+.pyre/
+.python-version
+.ropeproject/
+
+# Jupyter
+.ipynb_checkpoints
+
+# Celery
+celerybeat-schedule
+
+# dotenv / env files
+.env
+.envrc
+.local
+
+# Profiling
+.prof
+
+# OS files
+.DS_Store
+Thumbs.db
+ehthumbs.db
+
+# Local settings
+local_settings.py
+
+# Ignore lock files or build artifacts commonly produced
+pip-selfcheck.json
+.python-version
+```// filepath: d:\Estudos\Python\.gitignore
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Distribution / packaging
+build/
+dist/
+*.egg-info/
+.eggs/
+pip-wheel-metadata/
+*.egg
+
+# Virtual environments
+.env
+.env.*
+.venv/
+venv/
+ENV/
+env/
+env.bak/
+venv.bak/
+
+# PyInstaller
+*.manifest
+*.spec
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+.pytest_cache/
+
+# Translations
+*.mo
+*.pot
+
+# IDEs and editors
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+*.swp
+
+# Language server / type checkers / tooling
+.mypy_cache/
+.pytype/
+.pyre/
+.python-version
+.ropeproject/
+
+# Jupyter
+.ipynb_checkpoints
+
+# Celery
+celerybeat-schedule
+
+# dotenv / env files
+.env
+.envrc
+.local
+
+# Profiling
+.prof
+
+# OS files
+.DS_Store
+Thumbs.db
+ehthumbs.db
+
+# Local settings
+local_settings.py
+
+# Ignore lock files or build artifacts commonly produced
+pip-selfcheck.json
+.python-version
