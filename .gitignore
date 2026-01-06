@@ -171,3 +171,9 @@ local_settings.py
 # Ignore lock files or build artifacts commonly produced
 pip-selfcheck.json
 .python-version
+
+# Arquivos temporarios
+*.tmp
+*.log
+*.dump
+*saida.*
