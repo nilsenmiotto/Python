@@ -10,7 +10,7 @@
 ## 2. Frameworks e Bibliotecas Populares
 
 - **Web:** Django, Flask, FastAPI
-- **Data:** Pandas, NumPy, Matplotlib
+- **Data:** JSON, Pandas, NumPy, Matplotlib
 - **Testes:** Pytest, unittest
 - **Automação:** Selenium, Requests
 
