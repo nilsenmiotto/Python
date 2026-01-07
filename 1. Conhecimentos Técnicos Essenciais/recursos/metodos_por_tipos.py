@@ -132,3 +132,40 @@ print("Tupla original:", minha_tupla)
 print("Contagem do item 2:", minha_tupla.count(2)) # conta quantas vezes 2 aparece
 print("Índice de 3:", minha_tupla.index(3)) # encontra o índice de 3
 
+
+# bytes / bytearray:
+# - bytes.hex(), bytes.decode(), bytearray.extend(), bytearray.decode(), fromhex(), translate()
+
+meus_bytes = b'Hello'
+print("Bytes original:", meus_bytes)
+print("Hexadecimal:", meus_bytes.hex()) # converte para hexadecimal
+print("Decodificado:", meus_bytes.decode()) # decodifica para string
+
+meu_bytearray = bytearray(b'World')
+print("Bytearray original:", meu_bytearray)
+meu_bytearray.extend(b'!!!') # estende o bytearray
+print("Após extend:", meu_bytearray)
+print("Decodificado:", meu_bytearray.decode()) # decodifica para string
+
+bytes_from_hex = bytes.fromhex('48656c6c6f') # cria bytes a partir de hexadecimal
+print("Bytes a partir de hexadecimal:", bytes_from_hex)
+translated_bytes = meus_bytes.translate(bytes.maketrans(b'Hello', b'Hallo')) # traduz bytes
+print("Após translate:", translated_bytes)
+
+
+# números (int, float, complex):
+# - int.bit_length(), int.to_bytes(), int.from_bytes()
+# - float.is_integer()
+
+num_inteiro = 42
+print("Número inteiro:", num_inteiro)
+print("Bit length:", num_inteiro.bit_length()) # número de bits necessários para representar o inteiro
+bytes_repr = num_inteiro.to_bytes(2, byteorder='big') # converte para bytes
+print("Representação em bytes:", bytes_repr)
+
+num_from_bytes = int.from_bytes(bytes_repr, byteorder='big') # converte de volta para inteiro
+print("De volta para inteiro:", num_from_bytes)
+
+num_float = 3.14
+print("Número float:", num_float)
+print("É inteiro?", num_float.is_integer()) # verifica se é um número inteiro
