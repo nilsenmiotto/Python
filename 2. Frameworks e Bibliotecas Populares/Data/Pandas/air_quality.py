@@ -1,7 +1,6 @@
 import pandas as pd
 from pathlib import Path
-
-#https://pandas.pydata.org/docs/getting_started/intro_tutorials/04_plotting.html
+import matplotlib.pyplot as plt
 
 arquivo = Path(__file__).parent / "air_quality_no2.csv"
 
@@ -28,3 +27,9 @@ print(air_quality_renamed.head())
 air_quality = air_quality.rename(columns={"date.utc": "datetime"})
 air_quality["datetime"] = pd.to_datetime(air_quality["datetime"])
 print(air_quality["datetime"].min(), air_quality["datetime"].max())
+
+
+#https://pandas.pydata.org/docs/getting_started/intro_tutorials/04_plotting.html
+air_quality.plot(x="datetime", y=["station_paris", "station_antwerp", "station_london"])
+air_quality.plot.scatter(x="station_london", y="station_paris", alpha=0.5)
+plt.show()
