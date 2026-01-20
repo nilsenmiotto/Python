@@ -1,0 +1,560 @@
+[
+  {
+    "id": 1,
+    "nome": "Arroz Branco 1kg",
+    "categoria": "Grãos",
+    "preco": 7.49,
+    "estoque": 120,
+    "unidade": "pacote",
+    "marca": "BomSabor"
+  },
+  {
+    "id": 2,
+    "nome": "Feijão Carioca 1kg",
+    "categoria": "Grãos",
+    "preco": 8.99,
+    "estoque": 90,
+    "unidade": "pacote",
+    "marca": "SaborReal"
+  },
+  {
+    "id": 3,
+    "nome": "Macarrão Espaguete 500g",
+    "categoria": "Massas",
+    "preco": 4.79,
+    "estoque": 75,
+    "unidade": "pacote",
+    "marca": "Massita"
+  },
+  {
+    "id": 4,
+    "nome": "Azeite de Oliva 500ml",
+    "categoria": "Óleos",
+    "preco": 24.9,
+    "estoque": 40,
+    "unidade": "garrafa",
+    "marca": "Olivar"
+  },
+  {
+    "id": 5,
+    "nome": "Leite Integral 1L",
+    "categoria": "Laticínios",
+    "preco": 4.59,
+    "estoque": 200,
+    "unidade": "caixa",
+    "marca": "FazendaLeite"
+  },
+  {
+    "id": 6,
+    "nome": "Queijo Mussarela 500g",
+    "categoria": "Laticínios",
+    "preco": 22.5,
+    "estoque": 50,
+    "unidade": "peça",
+    "marca": "SerraAlta"
+  },
+  {
+    "id": 7,
+    "nome": "Café Torrado e Moído 500g",
+    "categoria": "Bebidas",
+    "preco": 14.9,
+    "estoque": 65,
+    "unidade": "pacote",
+    "marca": "ManhãBoa"
+  },
+  {
+    "id": 8,
+    "nome": "Suco de Laranja 1L",
+    "categoria": "Bebidas",
+    "preco": 6.49,
+    "estoque": 80,
+    "unidade": "garrafa",
+    "marca": "Citrus"
+  },
+  {
+    "id": 9,
+    "nome": "Sabonete Barra 90g",
+    "categoria": "Higiene",
+    "preco": 2.49,
+    "estoque": 300,
+    "unidade": "unidade",
+    "marca": "Floralis"
+  },
+  {
+    "id": 10,
+    "nome": "Detergente Neutro 500ml",
+    "categoria": "Limpeza",
+    "preco": 2.99,
+    "estoque": 180,
+    "unidade": "frasco",
+    "marca": "CasaLimpa"
+  },
+  {
+    "id": 11,
+    "nome": "Papel Higiênico 12x30m",
+    "categoria": "Higiene",
+    "preco": 18.9,
+    "estoque": 60,
+    "unidade": "fardo",
+    "marca": "SoftCare"
+  },
+  {
+    "id": 12,
+    "nome": "Biscoito Cream Cracker 400g",
+    "categoria": "Snacks",
+    "preco": 5.49,
+    "estoque": 95,
+    "unidade": "pacote",
+    "marca": "Crocante"
+  },
+  {
+    "id": 13,
+    "nome": "Arroz Integral 1kg",
+    "categoria": "Grãos",
+    "preco": 8.79,
+    "estoque": 110,
+    "unidade": "pacote",
+    "marca": "VidaLeve"
+  },
+  {
+    "id": 14,
+    "nome": "Feijão Preto 1kg",
+    "categoria": "Grãos",
+    "preco": 9.29,
+    "estoque": 85,
+    "unidade": "pacote",
+    "marca": "SaborReal"
+  },
+  {
+    "id": 15,
+    "nome": "Farinha de Trigo 1kg",
+    "categoria": "Grãos",
+    "preco": 5.19,
+    "estoque": 140,
+    "unidade": "pacote",
+    "marca": "TrigoBom"
+  },
+  {
+    "id": 16,
+    "nome": "Aveia em Flocos 500g",
+    "categoria": "Grãos",
+    "preco": 6.39,
+    "estoque": 70,
+    "unidade": "pacote",
+    "marca": "CerealMix"
+  },
+  {
+    "id": 17,
+    "nome": "Quinoa 500g",
+    "categoria": "Grãos",
+    "preco": 18.9,
+    "estoque": 45,
+    "unidade": "pacote",
+    "marca": "Andes"
+  },
+  {
+    "id": 18,
+    "nome": "Grão-de-Bico 500g",
+    "categoria": "Grãos",
+    "preco": 11.5,
+    "estoque": 55,
+    "unidade": "pacote",
+    "marca": "Mediterrâneo"
+  },
+  {
+    "id": 19,
+    "nome": "Lentilha 500g",
+    "categoria": "Grãos",
+    "preco": 9.79,
+    "estoque": 60,
+    "unidade": "pacote",
+    "marca": "BomSabor"
+  },
+  {
+    "id": 20,
+    "nome": "Macarrão Penne 500g",
+    "categoria": "Massas",
+    "preco": 5.49,
+    "estoque": 80,
+    "unidade": "pacote",
+    "marca": "Massita"
+  },
+  {
+    "id": 21,
+    "nome": "Macarrão Parafuso 500g",
+    "categoria": "Massas",
+    "preco": 5.29,
+    "estoque": 82,
+    "unidade": "pacote",
+    "marca": "Itália"
+  },
+  {
+    "id": 22,
+    "nome": "Lasanha 500g",
+    "categoria": "Massas",
+    "preco": 9.99,
+    "estoque": 50,
+    "unidade": "pacote",
+    "marca": "CasaBella"
+  },
+  {
+    "id": 23,
+    "nome": "Molho de Tomate 340g",
+    "categoria": "Massas",
+    "preco": 3.89,
+    "estoque": 150,
+    "unidade": "sachê",
+    "marca": "Pomodoro"
+  },
+  {
+    "id": 24,
+    "nome": "Azeite Extra Virgem 750ml",
+    "categoria": "Óleos",
+    "preco": 34.9,
+    "estoque": 35,
+    "unidade": "garrafa",
+    "marca": "Mediterrâneo"
+  },
+  {
+    "id": 25,
+    "nome": "Óleo de Soja 900ml",
+    "categoria": "Óleos",
+    "preco": 7.29,
+    "estoque": 160,
+    "unidade": "garrafa",
+    "marca": "SojaPura"
+  },
+  {
+    "id": 26,
+    "nome": "Óleo de Girassol 900ml",
+    "categoria": "Óleos",
+    "preco": 9.49,
+    "estoque": 90,
+    "unidade": "garrafa",
+    "marca": "SolDourado"
+  },
+  {
+    "id": 27,
+    "nome": "Manteiga 200g",
+    "categoria": "Laticínios",
+    "preco": 12.9,
+    "estoque": 70,
+    "unidade": "tablete",
+    "marca": "SerraAlta"
+  },
+  {
+    "id": 28,
+    "nome": "Iogurte Natural 170g",
+    "categoria": "Laticínios",
+    "preco": 2.79,
+    "estoque": 180,
+    "unidade": "copo",
+    "marca": "FazendaLeite"
+  },
+  {
+    "id": 29,
+    "nome": "Creme de Leite 200g",
+    "categoria": "Laticínios",
+    "preco": 4.19,
+    "estoque": 130,
+    "unidade": "caixinha",
+    "marca": "NataPura"
+  },
+  {
+    "id": 30,
+    "nome": "Requeijão Cremoso 200g",
+    "categoria": "Laticínios",
+    "preco": 6.49,
+    "estoque": 95,
+    "unidade": "pote",
+    "marca": "Cremoso"
+  },
+  {
+    "id": 31,
+    "nome": "Leite Desnatado 1L",
+    "categoria": "Laticínios",
+    "preco": 4.39,
+    "estoque": 190,
+    "unidade": "caixa",
+    "marca": "FazendaLeite"
+  },
+  {
+    "id": 32,
+    "nome": "Suco de Uva Integral 1L",
+    "categoria": "Bebidas",
+    "preco": 12.5,
+    "estoque": 55,
+    "unidade": "garrafa",
+    "marca": "Vinha"
+  },
+  {
+    "id": 33,
+    "nome": "Refrigerante Cola 2L",
+    "categoria": "Bebidas",
+    "preco": 8.99,
+    "estoque": 140,
+    "unidade": "garrafa",
+    "marca": "Frescor"
+  },
+  {
+    "id": 34,
+    "nome": "Água Mineral 1.5L",
+    "categoria": "Bebidas",
+    "preco": 2.39,
+    "estoque": 220,
+    "unidade": "garrafa",
+    "marca": "FonteViva"
+  },
+  {
+    "id": 35,
+    "nome": "Chá Verde 300ml",
+    "categoria": "Bebidas",
+    "preco": 4.79,
+    "estoque": 90,
+    "unidade": "garrafa",
+    "marca": "Herbal"
+  },
+  {
+    "id": 36,
+    "nome": "Cerveja Pilsen 350ml",
+    "categoria": "Bebidas",
+    "preco": 3.49,
+    "estoque": 180,
+    "unidade": "lata",
+    "marca": "Lager"
+  },
+  {
+    "id": 37,
+    "nome": "Sabão em Pó 1kg",
+    "categoria": "Limpeza",
+    "preco": 12.9,
+    "estoque": 120,
+    "unidade": "pacote",
+    "marca": "Brilho"
+  },
+  {
+    "id": 38,
+    "nome": "Amaciante 2L",
+    "categoria": "Limpeza",
+    "preco": 11.49,
+    "estoque": 90,
+    "unidade": "garrafa",
+    "marca": "ToqueSuave"
+  },
+  {
+    "id": 39,
+    "nome": "Água Sanitária 1L",
+    "categoria": "Limpeza",
+    "preco": 3.29,
+    "estoque": 150,
+    "unidade": "garrafa",
+    "marca": "Clari"
+  },
+  {
+    "id": 40,
+    "nome": "Desinfetante 2L",
+    "categoria": "Limpeza",
+    "preco": 9.59,
+    "estoque": 110,
+    "unidade": "garrafa",
+    "marca": "CasaLimpa"
+  },
+  {
+    "id": 41,
+    "nome": "Esponja Multiuso",
+    "categoria": "Limpeza",
+    "preco": 1.99,
+    "estoque": 400,
+    "unidade": "unidade",
+    "marca": "Prática"
+  },
+  {
+    "id": 42,
+    "nome": "Limpador de Vidros 500ml",
+    "categoria": "Limpeza",
+    "preco": 7.29,
+    "estoque": 95,
+    "unidade": "spray",
+    "marca": "Clari"
+  },
+  {
+    "id": 43,
+    "nome": "Escova de Dentes",
+    "categoria": "Higiene",
+    "preco": 4.59,
+    "estoque": 220,
+    "unidade": "unidade",
+    "marca": "Smile"
+  },
+  {
+    "id": 44,
+    "nome": "Creme Dental 90g",
+    "categoria": "Higiene",
+    "preco": 5.79,
+    "estoque": 210,
+    "unidade": "tubo",
+    "marca": "BrancoMax"
+  },
+  {
+    "id": 45,
+    "nome": "Shampoo 400ml",
+    "categoria": "Higiene",
+    "preco": 12.49,
+    "estoque": 130,
+    "unidade": "frasco",
+    "marca": "Cabelos"
+  },
+  {
+    "id": 46,
+    "nome": "Condicionador 400ml",
+    "categoria": "Higiene",
+    "preco": 12.99,
+    "estoque": 125,
+    "unidade": "frasco",
+    "marca": "Cabelos"
+  },
+  {
+    "id": 47,
+    "nome": "Desodorante Aerosol 150ml",
+    "categoria": "Higiene",
+    "preco": 11.49,
+    "estoque": 160,
+    "unidade": "spray",
+    "marca": "FreshAir"
+  },
+  {
+    "id": 48,
+    "nome": "Algodão 50g",
+    "categoria": "Higiene",
+    "preco": 3.99,
+    "estoque": 140,
+    "unidade": "pacote",
+    "marca": "SoftCare"
+  },
+  {
+    "id": 49,
+    "nome": "Biscoito Recheado 130g",
+    "categoria": "Snacks",
+    "preco": 3.49,
+    "estoque": 180,
+    "unidade": "pacote",
+    "marca": "DoceSabor"
+  },
+  {
+    "id": 50,
+    "nome": "Batata Chips 90g",
+    "categoria": "Snacks",
+    "preco": 5.99,
+    "estoque": 150,
+    "unidade": "pacote",
+    "marca": "Crocante"
+  },
+  {
+    "id": 51,
+    "nome": "Amendoim Torrado 200g",
+    "categoria": "Snacks",
+    "preco": 6.29,
+    "estoque": 120,
+    "unidade": "pacote",
+    "marca": "Croque"
+  },
+  {
+    "id": 52,
+    "nome": "Barra de Cereal 25g",
+    "categoria": "Snacks",
+    "preco": 2.19,
+    "estoque": 260,
+    "unidade": "unidade",
+    "marca": "Energia"
+  },
+  {
+    "id": 53,
+    "nome": "Chocolate ao Leite 90g",
+    "categoria": "Snacks",
+    "preco": 5.79,
+    "estoque": 140,
+    "unidade": "barra",
+    "marca": "CacauFino"
+  },
+  {
+    "id": 54,
+    "nome": "Pão de Forma Integral 500g",
+    "categoria": "Massas",
+    "preco": 8.49,
+    "estoque": 100,
+    "unidade": "pacote",
+    "marca": "FornoQuente"
+  },
+  {
+    "id": 55,
+    "nome": "Pão Francês 1kg",
+    "categoria": "Massas",
+    "preco": 14.9,
+    "estoque": 70,
+    "unidade": "pacote",
+    "marca": "Padoca"
+  },
+  {
+    "id": 56,
+    "nome": "Cereal Matinal 300g",
+    "categoria": "Grãos",
+    "preco": 9.39,
+    "estoque": 95,
+    "unidade": "caixa",
+    "marca": "CerealMix"
+  },
+  {
+    "id": 57,
+    "nome": "Granola 250g",
+    "categoria": "Grãos",
+    "preco": 10.5,
+    "estoque": 80,
+    "unidade": "pacote",
+    "marca": "VidaLeve"
+  },
+  {
+    "id": 58,
+    "nome": "Suco de Maçã 1L",
+    "categoria": "Bebidas",
+    "preco": 6.99,
+    "estoque": 100,
+    "unidade": "garrafa",
+    "marca": "Pomare"
+  },
+  {
+    "id": 59,
+    "nome": "Suco de Manga 1L",
+    "categoria": "Bebidas",
+    "preco": 6.99,
+    "estoque": 95,
+    "unidade": "garrafa",
+    "marca": "Tropical"
+  },
+  {
+    "id": 60,
+    "nome": "Chá Gelado Limão 1.5L",
+    "categoria": "Bebidas",
+    "preco": 7.49,
+    "estoque": 85,
+    "unidade": "garrafa",
+    "marca": "Refresc"
+  },
+  {
+    "id": 61,
+    "nome": "Energético 250ml",
+    "categoria": "Bebidas",
+    "preco": 8.49,
+    "estoque": 120,
+    "unidade": "lata",
+    "marca": "Turbo"
+  },
+  {
+    "id": 62,
+    "nome": "Biscoito Salgado Integral 200g",
+    "categoria": "Lanches",
+    "preco": 4.99,
+    "estoque": 110,
+    "unidade": "pacote",
+    "marca": "Crocante"
+  }
+]
