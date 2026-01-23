@@ -1,0 +1,23 @@
+[
+  {
+    "usuario": "alice",
+    "senha": "senhaSegura123",
+    "nome": "Alice Silva",
+    "email": "alice@example.com",
+    "habilitado": true
+  },
+  {
+    "usuario": "bruno",
+    "senha": "outraSenha!456",
+    "nome": "Bruno Costa",
+    "email": "bruno@example.com",
+    "habilitado": false
+  },
+  {
+    "usuario": "carla",
+    "senha": "SenhaForte789",
+    "nome": "Carla Souza",
+    "email": "carla@example.com",
+    "habilitado": true
+  }
+]
