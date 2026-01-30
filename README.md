@@ -1,4 +1,4 @@
-# Plano de Estudos Python Full Stack
+# Plano de Estudos Python
 
 ## 1. Conhecimentos Técnicos Essenciais
 
@@ -9,27 +9,27 @@
 
 ## 2. Frameworks e Bibliotecas Populares
 
-- **Web:** Django, Flask, FastAPI
+- **Web:** ~~Django, Flask~~, FastAPI
 - **Data:** JSON, Pandas, NumPy, Matplotlib
-- **Testes:** Pytest, unittest
-- **Automação:** Selenium, Requests
+- **Testes:** Pytest, ~~unittest~~
+- ~~**Automação:** Selenium, Requests~~
 
 ## 3. Boas Práticas de Código
 
-- PEP8, Clean Code, SOLID
-- Testes automatizados e TDD
+- PEP8, ~~Clean Code, SOLID~~
+- ~~Testes automatizados e TDD~~
 - Documentação clara e legível
 
-## 4. Design de Software
+## ~~4. Design de Software~~
 
-- Arquitetura de sistemas (MVC, microserviços, DDD)
-- Padrões de projeto (Design Patterns)
-- Refatoração e escalabilidade
+- ~~Arquitetura de sistemas (MVC, microserviços, DDD)~~
+- ~~Padrões de projeto (Design Patterns)~~
+- ~~Refatoração e escalabilidade~~
 
 ## 5. Banco de Dados
 
-- SQL (PostgreSQL, MySQL) e NoSQL (MongoDB, Redis)
-- ORMs como SQLAlchemy e Django ORM
+- SQL (PostgreSQL, MySQL) e NoSQL (MongoDB, ~~Redis~~)
+- ORMs como SQLAlchemy ~~e Django ORM~~
 
 ## 6. DevOps e Infraestrutura
 
@@ -45,7 +45,7 @@
 
 - Hugging Face Transformers
 - LangChain
-- OpenAI SDK
-- spaCy
+- ~~OpenAI SDK~~
+- ~~spaCy~~
 - SentenceTransformers
 - Haystack
