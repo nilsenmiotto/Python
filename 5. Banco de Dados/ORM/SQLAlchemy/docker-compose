@@ -1,0 +1,28 @@
+services:
+  mysql-local:
+    image: mysql:latest
+    environment:
+      MYSQL_ROOT_PASSWORD: mudar123
+      MYSQL_DATABASE: meu_banco
+    ports:
+      - "3306:3306"  # opcional; só se quiser acessar de fora
+    volumes:
+      - db_data:/var/lib/mysql
+
+  app:
+    build: .
+    environment:
+      DB_URL: "mysql+pymysql://root:mudar123@mysql-local:3306/meu_banco"
+    depends_on:
+      - mysql-local
+
+networks:
+  minha-rede:
+services:
+  mysql-local:
+    networks: [minha-rede]
+  app:
+    networks: [minha-rede]
+
+volumes:
+  db_data:

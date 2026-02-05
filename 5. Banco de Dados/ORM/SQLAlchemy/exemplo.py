@@ -1,3 +1,4 @@
+import os
 from typing import Optional
 from sqlalchemy import String, ForeignKey, create_engine, select, delete
 from sqlalchemy.orm import DeclarativeBase, Mapped, Session, mapped_column, relationship
@@ -5,7 +6,10 @@ from sqlalchemy.orm import DeclarativeBase, Mapped, Session, mapped_column, rela
 # Cria a engine apontando para o banco
 #engine = create_engine("sqlite:///meu_banco.db", echo=True)
 #engine = create_engine("postgresql+psycopg2://postgres:mudar123@localhost:5432/meu_banco")
-engine = create_engine("mysql+pymysql://root:mudar123@localhost:3306/meu_banco")
+#engine = create_engine("mysql+pymysql://root:mudar123@localhost:3306/meu_banco")
+
+db_url = os.getenv("DB_URL", "mysql+pymysql://root:mudar123@mysql-local:3306/meu_banco")
+engine = create_engine(db_url)
 
 class Base(DeclarativeBase):
     ...

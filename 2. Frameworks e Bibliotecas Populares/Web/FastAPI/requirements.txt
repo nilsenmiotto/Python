@@ -3,3 +3,4 @@ pydantic
 pyjwt
 pwdlib[argon2]
 python-multipart
+uvicorn[standard]
