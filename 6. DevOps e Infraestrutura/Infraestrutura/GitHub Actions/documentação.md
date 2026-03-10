@@ -1,0 +1,6 @@
+- **Documentação oficial:** [GitHub Actions](https://docs.github.com/actions)
+- **Visão geral:** [Guia de introdução](https://docs.github.com/actions/learn-github-actions)
+- **Sintaxe de workflows:** [Referência completa](https://docs.github.com/actions/writing-workflows/workflow-syntax-for-github-actions)
+- **Ações reutilizáveis:** [Como criar ações](https://docs.github.com/actions/creating-actions)
+- **Executores (runners):** [GitHub-hosted](https://docs.github.com/actions/using-github-hosted-runners) | [Self-hosted](https://docs.github.com/actions/using-self-hosted-runners)
+- **Exemplos e marketplace:** [Exemplos](https://docs.github.com/actions/examples) | [Marketplace](https://github.com/marketplace?type=actions)
