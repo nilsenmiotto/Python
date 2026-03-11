@@ -8,20 +8,20 @@ from datetime import datetime, timedelta, timezone
 import json
 import jwt
 
-
 app = FastAPI()
 oauth2_scheme = OAuth2PasswordBearer(tokenUrl="token")
 password_hash = PasswordHash.recommended()
 
 with open("usuarios.json", "r", encoding="utf-8") as file:
     usuarios_data = json.load(file)
-    
+
 
 # executar com o git bash ou terminal:
 # openssl rand -hex 32
 CHAVE_SECRETA = "00ac51fe165905ea336962e3c65c5222d60feb6fb2d7bfb0ffd10d7f1716c11f"
 ALGORITIMO = "HS256"
 TEMPO_EXPIRAR_TOKEN_ACESSO = 30
+
 
 class Usuario(BaseModel):
     usuario: str
@@ -30,12 +30,15 @@ class Usuario(BaseModel):
     email: Optional[str] = None
     habilitado: bool
 
+
 class Token(BaseModel):
     access_token: str
     token_type: str
 
+
 class DadosToken(BaseModel):
     usuario: str | None = None
+
 
 def verificar_senha(senha_simples, senha_hash):
     return password_hash.verify(senha_simples, senha_hash)
@@ -94,11 +97,11 @@ async def recupera_usuario_atual(token: Annotated[str, Depends(oauth2_scheme)]):
         nome_usuario = carregamento.get("sub")
         if nome_usuario is None:
             raise falha_credencial
-        
+
         dados_token = DadosToken(usuario=nome_usuario)
     except InvalidTokenError:
         raise falha_credencial
-    
+
     usuario = recupera_usuario(dados_token.usuario)
     if usuario is None:
         raise falha_credencial
@@ -106,7 +109,9 @@ async def recupera_usuario_atual(token: Annotated[str, Depends(oauth2_scheme)]):
     return usuario
 
 
-async def recupera_usuario_habilitado(usuario: Annotated[Usuario, Depends(recupera_usuario_atual)]):
+async def recupera_usuario_habilitado(
+    usuario: Annotated[Usuario, Depends(recupera_usuario_atual)],
+):
 
     if not usuario.habilitado:
         raise HTTPException(status_code=400, detail="Usuário inativo")
@@ -125,16 +130,23 @@ async def login(form_data: Annotated[OAuth2PasswordRequestForm, Depends()]):
     usuario = autentica_usuario(form_data.username, form_data.password)
     if not usuario:
         raise falha_login
-    
+
     expiracao_token_acesso = timedelta(minutes=TEMPO_EXPIRAR_TOKEN_ACESSO)
-    token_acesso = gera_token_acesso(dados={"sub": usuario.usuario}, duracao=expiracao_token_acesso)
+    token_acesso = gera_token_acesso(
+        dados={"sub": usuario.usuario}, duracao=expiracao_token_acesso
+    )
     return Token(access_token=token_acesso, token_type="bearer")
 
 
 @app.get("/users/me", response_model=Usuario)
-async def read_users_me(usuario_logado: Annotated[Usuario, Depends(recupera_usuario_habilitado)]):
+async def read_users_me(
+    usuario_logado: Annotated[Usuario, Depends(recupera_usuario_habilitado)],
+):
     return usuario_logado
 
+
 @app.get("/users/me/items/")
-async def read_own_items(usuario_logado: Annotated[Usuario, Depends(recupera_usuario_habilitado)]):
+async def read_own_items(
+    usuario_logado: Annotated[Usuario, Depends(recupera_usuario_habilitado)],
+):
     return [{"item_id": "Foo", "owner": usuario_logado.usuario}]

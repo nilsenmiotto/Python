@@ -1,4 +1,3 @@
-
 def soma_numeros(a, b):
     """
     Soma dois números e retorna o resultado.

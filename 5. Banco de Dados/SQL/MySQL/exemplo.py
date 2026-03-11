@@ -6,7 +6,7 @@ config = {
     "password": "mudar123",
     "host": "127.0.0.1",
     "port": 3306,
-    "database": "meu_banco"
+    "database": "meu_banco",
 }
 
 try:
@@ -16,26 +16,32 @@ try:
 
         with conn.cursor(dictionary=True) as cur:
 
-            cur.execute("INSERT INTO usuarios (nome, email) VALUES(%s, %s);",
-                ("Alice", "alice@example.com")
+            cur.execute(
+                "INSERT INTO usuarios (nome, email) VALUES(%s, %s);",
+                ("Alice", "alice@example.com"),
             )
             conn.commit()
 
             id_recuperada = cur.lastrowid
 
-            cur.execute("UPDATE usuarios SET email = %s WHERE id = %s;",
-                ("outroemail@example.com", id_recuperada))
+            cur.execute(
+                "UPDATE usuarios SET email = %s WHERE id = %s;",
+                ("outroemail@example.com", id_recuperada),
+            )
             conn.commit()
 
-            cur.execute("SELECT nome, email, criado_em FROM Usuarios WHERE id = %s;",
-                    (id_recuperada,))
+            cur.execute(
+                "SELECT nome, email, criado_em FROM Usuarios WHERE id = %s;",
+                (id_recuperada,),
+            )
             linhas = cur.fetchall()
 
             for linha in linhas:
-                print(f"Nome: {linha["nome"]}\nEmail: {linha["email"]}\nData de criação: {linha['criado_em']}")
+                print(
+                    f"Nome: {linha["nome"]}\nEmail: {linha["email"]}\nData de criação: {linha['criado_em']}"
+                )
 
-                cur.execute("DELETE FROM usuarios WHERE nome= %s;",
-                        (linha["nome"],))
+                cur.execute("DELETE FROM usuarios WHERE nome= %s;", (linha["nome"],))
                 conn.commit()
 
 

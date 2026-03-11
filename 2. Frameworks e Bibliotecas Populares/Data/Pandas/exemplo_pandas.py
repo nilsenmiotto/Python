@@ -11,7 +11,20 @@ from pathlib import Path
 def carregar_dados() -> pd.DataFrame:
     """Cria um DataFrame pequeno para experimentos."""
     dados = {
-        "produto": ["cafe", "cafe", "cafe", "cha", "cha", "cha", "suco", "suco", "suco", "refri", "refri", "refri"],
+        "produto": [
+            "cafe",
+            "cafe",
+            "cafe",
+            "cha",
+            "cha",
+            "cha",
+            "suco",
+            "suco",
+            "suco",
+            "refri",
+            "refri",
+            "refri",
+        ],
         "loja": ["A", "B", "C", "A", "B", "C", "A", "B", "C", "A", "B", "C"],
         "preco": [12.5, 13.0, 12.0, 9.5, 9.0, 9.5, 7.0, 7.5, 6.9, 11.0, 11.2, 10.5],
         "quantidade": [100, 80, 120, 140, 200, 180, 217, 150, 150, 217, 150, 301],
@@ -84,7 +97,9 @@ def transformar(df: pd.DataFrame) -> None:
     print("\nPivot quantidades por data/loja:")
     print(pivot)
 
-    melt = df_com_total.melt(id_vars=["produto", "loja"], value_vars=["preco", "quantidade"])
+    melt = df_com_total.melt(
+        id_vars=["produto", "loja"], value_vars=["preco", "quantidade"]
+    )
     print("\nMelt para formato longo:")
     print(melt.head())
 
@@ -137,6 +152,7 @@ def roteiro():
 
     arquivo = Path(__file__).resolve().parent / "dados_saida.csv"
     salvar_csv(df, arquivo)
+
 
 if __name__ == "__main__":
     roteiro()

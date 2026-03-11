@@ -4,9 +4,11 @@
 # pois não armazenam todos os valores de uma vez.
 # São úteis para trabalhar com grandes volumes de dados ou fluxos infinitos.
 
+
 def contador():
     for i in range(3):
         yield i
+
 
 for numero in contador():
     print(numero)
@@ -18,10 +20,12 @@ lista = ["Ameixa", "Banana", "Cereja"]
 # ele ainda é mais eficiente em termos de memória porque retorna um valor por vez com yield
 # no final das contas é como se existisse um loop for externo que consome os valores gerados um a um.
 
+
 def gerador_de_espacos(lista):
     for item in lista:
         resultado = " ".join(item.upper())
         yield resultado
+
 
 for item in gerador_de_espacos(lista):
     print(item)

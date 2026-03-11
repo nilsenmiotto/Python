@@ -22,18 +22,18 @@
 # next()       – obtém o próximo item de um iterador
 
 verifica_boleano = True
-if(type(verifica_boleano) is bool):
+if type(verifica_boleano) is bool:
     print("É um booleano!")
 
 texto = "Python é muito bom!"
-if(type(texto) is str):
+if type(texto) is str:
     print(texto.split(" "))
 
 for numeros in range(10, 100, 10):
     print(numeros)
 
-#input_usuario = input("Qual o seu nome?\n")
-#print("Olá,", input_usuario)
+# input_usuario = input("Qual o seu nome?\n")
+# print("Olá,", input_usuario)
 
 inteiro = int("10")
 flutuante = float("10.5")
@@ -56,55 +56,61 @@ menor = min(meu_conjunto)
 print("O menor elemento do conjunto é:", menor)
 
 desordenado = [3, 1, 4, 2]
-ordenado = sorted(desordenado)# retorna uma nova lista ordenada
+ordenado = sorted(desordenado)  # retorna uma nova lista ordenada
 print("Lista desordenada:", desordenado)
 print("Lista ordenada:", ordenado)
 
-#enumerate cria um indice para cada elemento da lista
+# enumerate cria um indice para cada elemento da lista
 for i, valor in enumerate(ordenado):
-   print(f"Índice: {i}, Valor: {valor}")
-   ordenado[i] = valor * 10
+    print(f"Índice: {i}, Valor: {valor}")
+    ordenado[i] = valor * 10
 print("Lista ordenada modificada:", ordenado)
 
-#zip combina duas listas em uma lista de tuplas
+# zip combina duas listas em uma lista de tuplas
 nomes = ["Ana", "João", "Maria", "Pedro"]
 idades = [25, 30, 22, 28]
 pessoas = list(zip(nomes, idades))
-print(pessoas) # Saída: [('Ana', 25), ('João', 30), ('Maria', 22), ('Pedro', 28)]
+print(pessoas)  # Saída: [('Ana', 25), ('João', 30), ('Maria', 22), ('Pedro', 28)]
 
 for nome, idade in zip(nomes, idades):
     print(f"{nome} tem {idade} anos.")
 
-#map aplica uma função a todos os elementos de uma lista
+
+# map aplica uma função a todos os elementos de uma lista
 def quadrado(x):
     return x * x
+
 
 numeros = [1, 2, 3, 4, 5]
 quadrados = list(map(quadrado, numeros))
 print("Números:", numeros)
 print("Quadrados:", quadrados)
 
+
 def inverte_string(s):
     return s[::-1]
+
 
 nomes_invertidos = list(map(inverte_string, nomes))
 print("Nomes:", nomes)
 print("Nomes invertidos:", nomes_invertidos)
 
-#filter filtra elementos de uma lista com base em uma condição
+
+# filter filtra elementos de uma lista com base em uma condição
 def strings_pequenas(s):
     return len(s) <= 3
+
 
 nomes_pequenos = list(filter(strings_pequenas, nomes))
 print("Nomes pequenos:", nomes_pequenos)
 
-if(isinstance(10, int)):
+if isinstance(10, int):
     print("É um inteiro!")
 
 
 lista = [0, False, 3, ""]
 
-if(isinstance(lista, (list, tuple, set))):
+if isinstance(lista, (list, tuple, set)):
     print("É uma lista, tupla ou conjunto!")
 
 print(any(lista))  # Saída: True (porque 3 é verdadeiro)
@@ -112,11 +118,11 @@ print(all(lista))  # Saída: False (porque 0, False e "" são falsos)
 
 print(round(3.14159, 2))  # Saída: 3.14
 
-#As funções chr() e ord() em Python servem para conversão entre caracteres e seus códigos Unicode (ou ASCII):
+# As funções chr() e ord() em Python servem para conversão entre caracteres e seus códigos Unicode (ou ASCII):
 print(chr(65))  # Saída: 'A'
 print(chr(8364))  # Saída: '€'
-print(ord('A'))  # Saída: 65
-print(ord('€'))  # Saída: 8364
+print(ord("A"))  # Saída: 65
+print(ord("€"))  # Saída: 8364
 
 valor = 3.14159
 print("valor formatado: {:.2f}".format(valor))  # Saída: valor formatado: 3.14
@@ -128,21 +134,20 @@ print(mensagem)  # Saída: Meu nome é Ana e tenho 25 anos.
 mensagem2 = "Meu nome é {nome} e tenho {idade} anos.".format(nome=nome, idade=idade)
 print(mensagem2)  # Saída: Meu nome é Ana e tenho 25 anos
 
-#eval executa uma expressão Python passada como string
+# eval executa uma expressão Python passada como string
 # Cuidado ao usar eval com entradas não confiáveis, pois pode executar código malicioso
 expressao = "2 + 3 * 4"
 resultado = eval(expressao)
 print(resultado)  # Saída: 14
 
-#iter() transforma um objeto iterável em um iterador, que pode ser consumido elemento por elemento.
+# iter() transforma um objeto iterável em um iterador, que pode ser consumido elemento por elemento.
 lista = [1, 2, 3]
 it = iter(lista)
 print(it)
 
-#A função next() em Python é usada para obter o próximo item de um iterador.
+# A função next() em Python é usada para obter o próximo item de um iterador.
 numeros = iter([10, 20, 30])
 print(next(numeros))  # Saída: 10
 print(next(numeros))  # Saída: 20
 print(next(numeros))  # Saída: 30
 print(next(numeros, "Fim"))  # Saída: Fim (evita StopIteration)
-

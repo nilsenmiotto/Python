@@ -8,12 +8,12 @@ dados = {
     "nome": "João",
     "idade": 30,
     "cidade": "São Paulo",
-    "habilidades": ["Python", "JavaScript", "SQL"]
+    "habilidades": ["Python", "JavaScript", "SQL"],
 }
 
 with arquivo.open("w", encoding="utf-8") as buffer:
     json.dump(dados, buffer, indent=4, ensure_ascii=False)
-    
+
 
 # Lendo dados de um arquivo JSON
 with arquivo.open("r", encoding="utf-8") as buffer:
@@ -21,7 +21,9 @@ with arquivo.open("r", encoding="utf-8") as buffer:
     print(dados_carregados)
 
 # Acessando dados específicos
-print(f"Nome: {dados_carregados['nome']} Habilidades: {', '.join(dados_carregados['habilidades'])}")
+print(
+    f"Nome: {dados_carregados['nome']} Habilidades: {', '.join(dados_carregados['habilidades'])}"
+)
 
 # Atualizando dados no arquivo JSON
 dados_carregados["cidade"] = "Marialva"

@@ -7,14 +7,14 @@
 # FileNotFoundError – arquivo não encontrado
 
 try:
-    resultado = 10 / 0 # ZeroDivisionError
-    valor = int("abc") # ValueError
-    soma = "2" + 3 # TypeError
+    resultado = 10 / 0  # ZeroDivisionError
+    valor = int("abc")  # ValueError
+    soma = "2" + 3  # TypeError
     lista = [1, 2, 3]
-    item = lista[5] # IndexError
+    item = lista[5]  # IndexError
     dicionario = {"chave": "valor"}
-    valor = dicionario["outra_chave"] # KeyError
-    with open("arquivo_inexistente.txt", "r") as arquivo: # FileNotFoundError
+    valor = dicionario["outra_chave"]  # KeyError
+    with open("arquivo_inexistente.txt", "r") as arquivo:  # FileNotFoundError
         conteudo = arquivo.read()
 
 
@@ -32,4 +32,3 @@ else:
     print("Tudo ok.")
 finally:
     print("Operação finalizada.")
-

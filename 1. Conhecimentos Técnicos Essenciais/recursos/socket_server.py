@@ -3,6 +3,7 @@ import socket
 HOST = "127.0.0.1"
 PORT = 6512
 
+
 def start_server():
 
     with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as server:
@@ -24,6 +25,7 @@ def start_server():
                         conn.sendall("Mensagem recebida com sucesso!".encode())
         except KeyboardInterrupt:
             print("\nServidor encerrado pelo usuário.")
+
 
 if __name__ == "__main__":
     start_server()

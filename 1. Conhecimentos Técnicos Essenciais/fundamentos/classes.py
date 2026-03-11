@@ -1,6 +1,7 @@
-# Em Python, classes são estruturas que permitem criar seus próprios tipos de dados, 
+# Em Python, classes são estruturas que permitem criar seus próprios tipos de dados,
 # agrupando dados (atributos) e comportamentos (métodos) em um só lugar.
 # Elas são a base da programação orientada a objetos.
+
 
 # Definição básica de classe
 class Pessoa:
@@ -11,18 +12,21 @@ class Pessoa:
     def apresentar(self):  # Método de instância
         print(f"Olá, meu nome é {self.nome} e tenho {self.idade} anos.")
 
+
 # Criando uma instância (objeto) da classe Pessoa
 pessoa1 = Pessoa("João", 25)
-pessoa1.apresentar() # Saída: Olá, meu nome é João e tenho 25 anos.
+pessoa1.apresentar()  # Saída: Olá, meu nome é João e tenho 25 anos.
+
 
 # Outra classe para demonstrar herança
 class Curso:
     def __init__(self, nome_curso, duracao):
         self.nome_curso = nome_curso  # Atributo de instância
         self.duracao = duracao  # Atributo de instância
-    
+
     def detalhes_curso(self):  # Método de instância
         print(f"Curso: {self.nome_curso}, Duração: {self.duracao} meses.")
+
 
 # Herança: criando uma classe que herda de outra
 class Estudante(Pessoa, Curso):
