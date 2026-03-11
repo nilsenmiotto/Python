@@ -22,11 +22,11 @@
 # next()       – obtém o próximo item de um iterador
 
 verifica_boleano = True
-if(type(verifica_boleano) == bool):
+if(type(verifica_boleano) is bool):
     print("É um booleano!")
 
 texto = "Python é muito bom!"
-if(type(texto) == str):
+if(type(texto) is str):
     print(texto.split(" "))
 
 for numeros in range(10, 100, 10):

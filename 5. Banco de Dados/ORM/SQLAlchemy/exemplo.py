@@ -1,6 +1,6 @@
 import os
 from typing import Optional
-from sqlalchemy import String, ForeignKey, create_engine, select, delete
+from sqlalchemy import String, ForeignKey, create_engine, select
 from sqlalchemy.orm import DeclarativeBase, Mapped, Session, mapped_column, relationship
 
 # Cria a engine apontando para o banco

@@ -1,4 +1,4 @@
-from typing import Optional, Union
+from typing import Optional
 from fastapi import FastAPI, HTTPException
 from fastapi.responses import JSONResponse
 from pydantic import BaseModel
@@ -49,7 +49,7 @@ def read_root():
 @app.get("/produtos/")
 def retorna_produtos(categoria: Categoria = None, skip: int = 0, limit: int = 10):
 
-    if categoria == None:
+    if categoria is None:
         filtro_por_categoria = produtos_data
     else:
         filtro_por_categoria = list(filter(lambda produto: produto["categoria"] == categoria.value, produtos_data))
