@@ -25,7 +25,7 @@ docker volume rm mongo_data
 docker volume create mongo_data
 
 # Start MongoDB with initial database creation
-docker run -d --name mongo-local --memory 2g --memory-swap 2g -e MONGO_INITDB_ROOT_USERNAME=admin -e MONGO_INITDB_ROOT_PASSWORD=mudar123 -e MONGO_INITDB_DATABASE=meu_banco -p 27017:27017 -v mongo_data:/data/db mongo:latest
+docker run -d --name mongo-local --memory 2g --memory-swap 2g -e MONGO_INITDB_ROOT_USERNAME=admin -e MONGO_INITDB_ROOT_PASSWORD=mudar123 -e MONGO_INITDB_DATABASE=meu_banco -p 27017:27017 -v mongo_data:/data/db -v mongo_data:/data/configdb mongo:latest
 
 # Create and connect MySQL container to custom network
 docker network create minha-rede
