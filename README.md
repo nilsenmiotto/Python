@@ -35,6 +35,7 @@
 
 - Docker, Kubernetes, CI/CD (GitHub Actions, GitLab CI)
 - Monitoramento e logging (Prometheus, Grafana, ELK)
+- Mensageria e streaming de dados (Kafka)
 
 ## 7. Cloud Computing
 
